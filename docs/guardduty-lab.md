@@ -47,5 +47,6 @@ Use of root credentials for API calls is generally discouraged as it carries hig
 
 ![Guardduty Findings Screenshot](../images/aws-cli-guardduty-get-findings.png)
 *Screenshot: Detailed CLI Findings*
-![View Detailed Report](../reports/guardduty-findings-25-06-2025)
+
+![View Detailed Report](../reports/guardduty-findings-25-06-2025.json)
 
