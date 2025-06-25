@@ -50,3 +50,29 @@ Use of root credentials for API calls is generally discouraged as it carries hig
 
 ![View Detailed Report](../reports/guardduty-findings-25-06-2025.json)
 
+---
+
+## 🧠 MITRE ATT&CK Mapping
+
+### 🔐 Finding: Usage of Root Account – `ListServiceSpecificCredentials` API
+
+**Technique:**  
+🔹 [T1078 – Valid Accounts](https://attack.mitre.org/techniques/T1078/)
+
+**Tactic:**  
+🔹 Initial Access / Persistence / Privilege Escalation
+
+**Mapping Justification:**  
+The use of the AWS root account to enumerate service-specific credentials is a strong indicator of potentially unauthorized account access. This aligns with **T1078**, where adversaries use valid credentials — especially high-privilege ones like the root user — to gain access to resources or further escalate privileges.
+
+**Detection Source:**  
+- **Service:** AWS GuardDuty  
+- **Finding Type:** `Policy:IAMUser/RootCredentialUsage`  
+- **API Called:** `ListServiceSpecificCredentials`  
+- **Severity:** Low  
+- **Region:** us-east-2  
+- **Logged by:** CloudTrail  
+- **Detection Method:** AWS CLI correlation + JSON report
+
+---
+
