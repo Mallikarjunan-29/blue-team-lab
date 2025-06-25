@@ -1,0 +1,68 @@
+{
+    "Findings": [
+        {
+            "AccountId": "002125562743",
+            "Arn": "arn:aws:guardduty:us-east-1:002125562743:detector/a8cbd1388ca254b0ac65d6a01de48f6f/finding/88cbd13bd0681a9fab0bca0f6df0445a",
+            "CreatedAt": "2025-06-24T15:03:58.416Z",
+            "Description": "The API ListServiceSpecificCredentials was invoked using root credentials from IP address 68.36.171.72.",
+            "Id": "88cbd13bd0681a9fab0bca0f6df0445a",
+            "Partition": "aws",
+            "Region": "us-east-1",
+            "Resource": {
+                "AccessKeyDetails": {
+                    "AccessKeyId": "ASIAQA7........"(Redacted),
+                    "PrincipalId": "002125562743",
+                    "UserName": "Root",
+                    "UserType": "Root"
+                },
+                "ResourceType": "AccessKey"
+            },
+            "SchemaVersion": "2.0",
+            "Service": {
+                "Action": {
+                    "ActionType": "AWS_API_CALL",
+                    "AwsApiCallAction": {
+                        "Api": "ListServiceSpecificCredentials",
+                        "CallerType": "Remote IP",
+                        "RemoteIpDetails": {
+                            "City": {
+                                "CityName": "Troy"
+                            },
+                            "Country": {
+                                "CountryName": "United States"
+                            },
+                            "GeoLocation": {
+                                "Lat": 42.5583,
+                                "Lon": -83.1805
+                            },
+                            "IpAddressV4": "68.36.171.72",
+                            "Organization": {
+                                "Asn": "7922",
+                                "AsnOrg": "COMCAST-7922",
+                                "Isp": "Comcast Cable",
+                                "Org": "Comcast Cable"
+                            }
+                        },
+                        "ServiceName": "iam.amazonaws.com",
+                        "AffectedResources": {}
+                    }
+                },
+                "Archived": false,
+                "Count": 172,
+                "DetectorId": "a8cbd1388ca254b0ac65d6a01de48f6f",
+                "EventFirstSeen": "2025-06-24T14:57:28.000Z",
+                "EventLastSeen": "2025-06-25T11:37:21.000Z",
+                "ResourceRole": "TARGET",
+                "ServiceName": "guardduty",
+                "AdditionalInfo": {
+                    "Value": "{}",
+                    "Type": "default"
+                }
+            },
+            "Severity": 2.0,
+            "Title": "The API ListServiceSpecificCredentials was invoked using root credentials.",
+            "Type": "Policy:IAMUser/RootCredentialUsage",
+            "UpdatedAt": "2025-06-25T11:44:27.115Z"
+        }
+    ]
+}
