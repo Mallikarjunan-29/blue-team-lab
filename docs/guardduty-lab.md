@@ -33,7 +33,7 @@ We retrieved detailed GuardDuty findings using the CLI:
 - **Source IP**: 68.36.171.72 Troy United States
 
 ## Description  
-The API DescribeMalwareScans was invoked using root credentials from IP address 68.36.171.72 Troy United States. Guard duty triggered the alert since root credentials were used. This could pose a threat if the activity was unauthorized.
+The  API ListServiceSpecificCredentials was invoked using root credentials from IP address 68.36.171.72 Troy United States. Guard duty triggered the alert since root credentials were used. This could pose a threat if the activity was unauthorized.
 
 
 ## Implications  
