@@ -42,15 +42,15 @@ User ID
 ![Caller Identity](../images/aws-cli-caller-identity.png)
 *Screenshot: Validated access related information*
 
-✅ Outcome
-blue-lab-user is now configured locally with CLI access. This user will be used to safely interact with AWS services like:
-GuardDuty alerts
-CloudTrail logs
-VPC Flow Logs
-IAM policy evaluation
-S3 bucket visibility
+## ✅ Outcome
 
-🔒 Notes
+The `blue-lab-user` was successfully created and tested for CLI access.
+
+- Access is granted via the AWS-managed **ReadOnlyAccess** policy, which provides **view-only permissions across all AWS services**, including IAM, GuardDuty, S3, VPC, and CloudTrail.
+- This ensures a **non-destructive learning environment**, perfect for hands-on cloud security labs without any risk of altering live resources.
+- The access model aligns with AWS security best practices and supports safe experimentation in real-world enterprise scenarios.
+
+## 🔒 Notes
 CLI access uses programmatic credentials, not your root account — best practice ✅
 Keep .aws/credentials file secured (stored in your home directory)
 No destructive actions can be taken due to ReadOnly permissions
