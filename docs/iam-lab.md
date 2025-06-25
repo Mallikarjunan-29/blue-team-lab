@@ -10,8 +10,8 @@ Create a secure, scoped-down IAM user to explore AWS services in read-only mode.
 - **Access Type**: Programmatic access (Access Key & Secret Key)
 - **Console Access**: ❌ Disabled
 - **User Creation Date**: 25-June-2025
-- [User Details Screenshot](../images/iam-user-creation.png)
-
+- ![User Details Screenshot](../images/iam-user-creation.png)
+*Screenshot: User details after successful IAM user creation.*
 ---
 
 ## 🛡️ Permissions
@@ -21,7 +21,8 @@ Create a secure, scoped-down IAM user to explore AWS services in read-only mode.
   - No risk of resource modification
   - Ideal for audit and investigation
   - Perfect for blue team visibility without write privileges
-  - [Permissions Screenshot](../images/policy-attached.png)
+  - ![Permissions Screenshot](../images/policy-attached.png)
+  - *Screenshot: IAM user permissions tab showing attached ReadOnlyAccess policy.*
 
 ---
 
