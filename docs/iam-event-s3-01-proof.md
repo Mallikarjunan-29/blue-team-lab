@@ -21,4 +21,10 @@ aws iam attach-user-policy \
 ```
 ![Simulated attack](../images/aws-cli-attack-simulation-01.png)
 *Screenshot: Command used for simulation*
+
 ![View Detailed Report](../reports/s3-simulation01-finding-26-06-2025-01.json)
+
+🧩 Why This Matters
+Helps detect stealthy IAM activities that bypass real-time console visibility
+Shows the importance of S3 log monitoring in addition to Event History
+Forms the baseline for alerting in Splunk/Wazuh-based detections
