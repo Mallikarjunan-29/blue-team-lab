@@ -21,4 +21,5 @@ aws iam attach-user-policy \
 ```
 ![Simulated attack](../images/aws-cli-attack-simulation-01.png)
 *Screenshot: Command used for simulation*
+
 ![View Detailed Report](../reports/s3-simulation01-finding-26-06-2025-01.json)
