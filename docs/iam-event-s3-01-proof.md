@@ -23,6 +23,7 @@ aws iam attach-user-policy \
 *Screenshot: Command used for simulation*
 
 ![View Detailed Report](../reports/s3-simulation01-finding-26-06-2025-01.json)
+*Log captured from S3 bucket — not seen in CloudTrail console!*
 
 ## Why This Matters
 
