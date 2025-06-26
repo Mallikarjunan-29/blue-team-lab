@@ -1,1 +1,37 @@
-{"Records":[{"eventVersion":"1.11","userIdentity":{"type":"IAMUser","principalId":"AIDAQA7VRQN......","arn":"arn:aws:iam::002125562743:user/blue-team-lab","accountId":"002125562743","accessKeyId":"AKIAQA7VR.......","userName":"blue-team-lab"},"eventTime":"2025-06-26T12:23:48Z","eventSource":"iam.amazonaws.com","eventName":"AttachUserPolicy","awsRegion":"us-east-1","sourceIPAddress":"68.36.171.72","userAgent":"aws-cli/2.27.41 md/awscrt#0.26.1 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.13.4 md/pyimpl#CPython m/E cfg/retry-mode#standard md/installer#exe md/prompt#off md/command#iam.attach-user-policy","errorCode":"AccessDenied","errorMessage":"User: arn:aws:iam::002125562743:user/blue-team-lab is not authorized to perform: iam:AttachUserPolicy on resource: user blue-team-lab because no identity-based policy allows the iam:AttachUserPolicy action","requestParameters":null,"responseElements":null,"requestID":"e05671a9-756d-4305-bfa0-a669cd83321b","eventID":"b2a4433c-44d9-4114-8c99-387510b8c747","readOnly":false,"eventType":"AwsApiCall","managementEvent":true,"recipientAccountId":"002125562743","eventCategory":"Management","tlsDetails":{"tlsVersion":"TLSv1.3","cipherSuite":"TLS_AES_128_GCM_SHA256","clientProvidedHostHeader":"iam.amazonaws.com"}}]}
+{
+    "Records": [
+        {
+            "eventVersion": "1.11",
+            "userIdentity": {
+                "type": "IAMUser",
+                "principalId": "AIDAQA7VRQN......",
+                "arn": "arn:aws:iam::002125562743:user/blue-team-lab",
+                "accountId": "002125562743",
+                "accessKeyId": "AKIAQA7VR.......",
+                "userName": "blue-team-lab"
+            },
+            "eventTime": "2025-06-26T12:23:48Z",
+            "eventSource": "iam.amazonaws.com",
+            "eventName": "AttachUserPolicy",
+            "awsRegion": "us-east-1",
+            "sourceIPAddress": "68.36.171.72",
+            "userAgent": "aws-cli/2.27.41 md/awscrt#0.26.1 ua/2.1 os/windows#11 md/arch#amd64 lang/python#3.13.4 md/pyimpl#CPython m/E cfg/retry-mode#standard md/installer#exe md/prompt#off md/command#iam.attach-user-policy",
+            "errorCode": "AccessDenied",
+            "errorMessage": "User: arn:aws:iam::002125562743:user/blue-team-lab is not authorized to perform: iam:AttachUserPolicy on resource: user blue-team-lab because no identity-based policy allows the iam:AttachUserPolicy action",
+            "requestParameters": null,
+            "responseElements": null,
+            "requestID": "e05671a9-756d-4305-bfa0-a669cd83321b",
+            "eventID": "b2a4433c-44d9-4114-8c99-387510b8c747",
+            "readOnly": false,
+            "eventType": "AwsApiCall",
+            "managementEvent": true,
+            "recipientAccountId": "002125562743",
+            "eventCategory": "Management",
+            "tlsDetails": {
+                "tlsVersion": "TLSv1.3",
+                "cipherSuite": "TLS_AES_128_GCM_SHA256",
+                "clientProvidedHostHeader": "iam.amazonaws.com"
+            }
+        }
+    ]
+}
