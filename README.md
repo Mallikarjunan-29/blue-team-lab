@@ -1,6 +1,6 @@
-# Cloud Blue Team Lab
+# Blue Team Lab
 
-This repository documents my 90-day hands-on journey building a Security Operations Center (SOC) lab focused on AWS cloud security using free-tier services.
+This repository documents my hands-on journey building a Security Operations Center (SOC) lab focused on cloud security using free-tier services.
 
 ## Objectives
 
