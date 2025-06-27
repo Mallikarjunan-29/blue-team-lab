@@ -9,7 +9,7 @@ from io import BytesIO
 BUCKET_NAME = 'aws-cloudtrail-logs-002125562743-9dd280fb'
 ACCOUNT_ID = '002125562743'
 REGIONS = ['us-east-1', 'us-east-2']
-DEST_FOLDER = os.path.expanduser('~/blue-team-lab/splunk_logs/aws')  # Relative path from scripts folder- maintain the folder structure or give the correct path under home/<user>/
+DEST_FOLDER = os.path.expanduser('~/blue-team-lab/splunk/splunk_logs/aws')  # Relative path from scripts folder- maintain the folder structure or give the correct path under home/<user>/
 
 # Create S3 client
 s3 = boto3.client('s3')
