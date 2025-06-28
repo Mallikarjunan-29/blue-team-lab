@@ -19,11 +19,9 @@ services:
       - "8089:8089"
     volumes:
       - ./splunk_logs/aws:/data/ingest/aws
-      - ./config/props.conf:/opt/splunk/etc/system/local/props.conf
-      - ./config/inputs.conf:/opt/splunk/etc/system/local/inputs.conf
+      - ./config:/opt/splunk/etc/system/local/
     restart: unless-stopped
-    networks:
-      - splunk-net
+    
 
 networks:
   splunk-net:
