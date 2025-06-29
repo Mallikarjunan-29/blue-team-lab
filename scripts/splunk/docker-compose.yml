@@ -18,12 +18,12 @@ services:
       - "1514:1514"
       - "8089:8089"
     volumes:
-      - ./splunk_logs/aws:/data/ingest/aws
-      - ./config:/opt/splunk/etc/system/local/
+      - ./splunk/splunk_logs/aws:/data/ingest/aws
+      - ./config:/opt/splunk/etc/apps/blue-team-lab
     restart: unless-stopped
-    
+
 
 networks:
   splunk-net:
-    driver: bridge 
+    driver: bridge
 
