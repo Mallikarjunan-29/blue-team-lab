@@ -1,8 +1,16 @@
+# Splunk App: AWS CloudTrail Ingestion
 
-This directory contains local settings that override all other
-settings, including the default settings, and specific configuration file
-settings.
+This folder contains:
 
-For details on configuration files, see $SPLUNK_HOME/etc/system/README/ directory
-for specifications and examples.
+- `.conf` files for Splunk App: `inputs.conf`, `props.conf`, `indexes.conf`, `app.conf`
+- `docker-compose.yml` to spin up Splunk
+- `s3_pull_logs.py` to regularly pull logs from S3
 
+Mounts as `/opt/splunk/etc/apps/blue-team-lab`
+
+Use this app for:
+- AWS CloudTrail ingestion
+- JSON parsing & timestamping
+- Setting up alerts
+
+🚀 Part of [blue-team-lab](https://github.com/Mallikarjunan-29/blue-team-lab)
